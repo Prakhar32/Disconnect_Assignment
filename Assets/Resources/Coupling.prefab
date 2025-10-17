@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4937766154790293473}
   - component: {fileID: -888081632751535512}
   - component: {fileID: 1989726156942575495}
-  - component: {fileID: -8698261573251363216}
   - component: {fileID: -4320548260900407739}
   m_Layer: 0
   m_Name: Coupling
@@ -238,18 +237,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-8698261573251363216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3878305373022346103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2f42a7a75a0f84c8978295acd7fbd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ScriptsAssembly::SingleInstanceEnsurer
 --- !u!114 &-4320548260900407739
 MonoBehaviour:
   m_ObjectHideFlags: 0
