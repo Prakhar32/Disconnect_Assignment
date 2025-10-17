@@ -42,7 +42,7 @@ public class CouplingTests
     private IEnumerator simulateScanning()
     {
         SimulationCameraPoseProvider camera = GameObject.FindFirstObjectByType<SimulationCameraPoseProvider>();
-        float elapsed = 0f; float rotationSpeed = 30f; float duration = 4f;
+        float elapsed = 0f; float rotationSpeed = 25f; float duration = 5f;
 
         while (elapsed < duration)
         {
@@ -65,9 +65,10 @@ public class CouplingTests
         plane = ARPlaneTestUtils.FindFirstPlaneInFrustum(GameObject.FindFirstObjectByType<ARPlaneManager>());
         yield return simulateLeftClick(plane.center);
         yield return null;
-        yield return new WaitForSeconds(1f); // Wait for placement to process
-        
-        Assert.IsTrue(GameObject.FindObjectsByType<XRGrabInteractable>(FindObjectsSortMode.None).Length == 1, "More than one coupling was placed.");
+        yield return new WaitForSeconds(1f);
+
+        int objectCount = GameObject.FindObjectsByType<XRGrabInteractable>(FindObjectsSortMode.None).Length;
+        Assert.AreEqual(1, objectCount, "More than one coupling was placed.");
     }
 
     private IEnumerator simulateLeftClick(Vector3 position)
@@ -92,7 +93,7 @@ public class CouplingTests
     }
 
     [UnityTearDown]
-    public IEnumerator TeearDown()
+    public IEnumerator TearDown()
     {
         yield return LoadScene(_currentScene);
     }
