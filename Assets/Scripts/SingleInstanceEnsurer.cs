@@ -5,9 +5,17 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 public class SingleInstanceEnsurer : MonoBehaviour
 {
     private ObjectSpawner _spawner;
+    private ARInteractorSpawnTrigger _spawnTrigger;
     void Start()
     {
+        _spawnTrigger = GetComponent<ARInteractorSpawnTrigger>();
         _spawner = GetComponent<ObjectSpawner>();
+
+        if( _spawnTrigger == null)
+        {
+            Destroy(this);
+            throw new MissingComponentException("ARInteractorSpawnTrigger missing");
+        }
 
         if (_spawner == null)
         {
@@ -20,6 +28,6 @@ public class SingleInstanceEnsurer : MonoBehaviour
 
     private void _spawner_objectSpawned(GameObject obj)
     {
-        _spawner.enabled = false;
+        _spawnTrigger.enabled = false;
     }
 }
