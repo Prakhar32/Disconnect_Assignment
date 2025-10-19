@@ -6,6 +6,17 @@ using UnityEngine.TestTools;
 public class AnimationTests
 {
     [UnityTest]
+    public IEnumerator AnimatorNotPresent()
+    {
+        LogAssert.ignoreFailingMessages = true;
+        GameObject g = new GameObject();
+        AnimationController animationController = g.AddComponent<AnimationController>();
+        yield return null;
+
+        Assert.IsTrue(animationController == null);
+    }
+
+    [UnityTest]
     public IEnumerator AttachPlays_AttachingAnimation()
     {
         //Given
