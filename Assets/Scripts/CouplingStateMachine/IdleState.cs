@@ -14,7 +14,7 @@ public class IdleState : CouplingState
 
     public void Attach()
     {
-        _statemachine.SetState(_statemachine._attachmentState);
+        _statemachine.SetState(_statemachine.GetAttachmentState());
     }
 
     public void Detach()

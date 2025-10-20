@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e53b3bfc85560b4a96d2ef1bb34bcca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ScriptsAssembly::CouplingStateMachine
+  GasMaterial: {fileID: 2100000, guid: c2a3f904bfd0a4945878629d36d0b11b, type: 2}
 --- !u!1001 &4661885098914577543
 PrefabInstance:
   m_ObjectHideFlags: 0
