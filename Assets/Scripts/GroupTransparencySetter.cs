@@ -1,28 +1,31 @@
+using NUnit.Framework;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GroupTransparencySetter : MonoBehaviour
 {
-    public Material TransparencyMaterial;
-    public Material OpaqueMaterial;
-    
+    public List<TransparencySetter> TransparencySetters;
 
     private void Start()
     {
-        if (TransparencyMaterial == null)
+        if(TransparencySetters == null || TransparencySetters.Count == 0)
         {
             Destroy(this);
-            throw new MissingReferenceException("TransparencySetter requires a TransparencyMaterial to function.");
-        }
-
-        if(OpaqueMaterial == null)
-        {
-            Destroy(this);
-            throw new MissingReferenceException("TransparencySetter requires an OpaqueMaterial to function.");
+            throw new MissingReferenceException("TransparencySetters list is null or empty.");
         }
     }
 
     public void MakeTransparent()
     {
-        
+        foreach (var setter in TransparencySetters)
+            setter.MakeTransparent();
+    }
+
+    public void MakeOpaque()
+    {
+        foreach (var setter in TransparencySetters)
+            setter.MakeOpaque();
     }
 }

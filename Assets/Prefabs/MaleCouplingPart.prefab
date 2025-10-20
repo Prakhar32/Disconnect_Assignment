@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 5539514630229942695}
   - component: {fileID: 7681885541770604190}
   - component: {fileID: 7252305081035319905}
+  - component: {fileID: 1232500920196986004}
   m_Layer: 0
   m_Name: HOSE_UNIT__PRODUCT
   m_TagString: Untagged
@@ -153,6 +154,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1232500920196986004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738982927081861374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &3739531056486269917
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +178,7 @@ GameObject:
   - component: {fileID: 4752634471942714647}
   - component: {fileID: 5671456836510183280}
   - component: {fileID: 7965440574627676679}
+  - component: {fileID: 1486352581119088606}
   m_Layer: 0
   m_Name: HANDLE
   m_TagString: Untagged
@@ -265,6 +279,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8484721201649293228, guid: 85ffabdbf27d3014fab353babedde17b, type: 3}
+--- !u!114 &1486352581119088606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3739531056486269917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &5218565832956401681
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +302,7 @@ GameObject:
   - component: {fileID: 370805950478676665}
   - component: {fileID: 3939184324426700369}
   - component: {fileID: 1569339700238497311}
+  - component: {fileID: 6316676179366722627}
   m_Layer: 0
   m_Name: polySurface130
   m_TagString: Untagged
@@ -354,6 +381,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6316676179366722627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218565832956401681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &5449969059160390863
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +404,7 @@ GameObject:
   - component: {fileID: 4475639882929918594}
   - component: {fileID: 7929990257758084245}
   - component: {fileID: 4245611124471278287}
+  - component: {fileID: 7045841168142186979}
   m_Layer: 0
   m_Name: INSIDE_RING
   m_TagString: Untagged
@@ -443,6 +483,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7045841168142186979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5449969059160390863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &6289334658474942527
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +506,7 @@ GameObject:
   - component: {fileID: 5323246752810287891}
   - component: {fileID: 6879497931594416995}
   - component: {fileID: 6562892697556078217}
+  - component: {fileID: 3051430279341425175}
   m_Layer: 0
   m_Name: HOSE_UNIT
   m_TagString: Untagged
@@ -532,6 +585,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3051430279341425175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6289334658474942527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &6479370093858945369
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +608,7 @@ GameObject:
   - component: {fileID: 958415643469800007}
   - component: {fileID: 3107407826192565375}
   - component: {fileID: 3320259455137284669}
+  - component: {fileID: 497131514427237478}
   m_Layer: 0
   m_Name: INSIIDE_RING_2_FRONT
   m_TagString: Untagged
@@ -621,6 +687,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &497131514427237478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479370093858945369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &6741874649190419653
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +823,7 @@ GameObject:
   - component: {fileID: 8797210571811494898}
   - component: {fileID: 6536233436957743516}
   - component: {fileID: 7486822506977059682}
+  - component: {fileID: 2546537897988391953}
   m_Layer: 0
   m_Name: polySurface125
   m_TagString: Untagged
@@ -823,6 +902,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2546537897988391953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6884264270973136787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &7255920417883007220
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +925,7 @@ GameObject:
   - component: {fileID: 2041101324037438860}
   - component: {fileID: 8951742940136980925}
   - component: {fileID: 1494030483962407689}
+  - component: {fileID: 246109351555194070}
   m_Layer: 0
   m_Name: PROTECTION_RING
   m_TagString: Untagged
@@ -912,6 +1004,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &246109351555194070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7255920417883007220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &8740744001729013312
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +1027,7 @@ GameObject:
   - component: {fileID: 6304111226203182470}
   - component: {fileID: 7338809750887532360}
   - component: {fileID: 4720713948240362816}
+  - component: {fileID: 2279857036830126875}
   m_Layer: 0
   m_Name: FLAP_MALE
   m_TagString: Untagged
@@ -1001,3 +1106,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2279857036830126875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8740744001729013312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter

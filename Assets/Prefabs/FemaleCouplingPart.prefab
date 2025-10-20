@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 8404219147326760997}
   - component: {fileID: 5269210757604832573}
   - component: {fileID: 2814341418443536478}
+  - component: {fileID: 3991797974979288003}
   m_Layer: 0
   m_Name: TANK_END_ASSEMBLY
   m_TagString: Untagged
@@ -148,6 +149,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -9215751956581828110, guid: 85ffabdbf27d3014fab353babedde17b, type: 3}
+--- !u!114 &3991797974979288003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391921891273042763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &838832250026563768
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,6 +173,7 @@ GameObject:
   - component: {fileID: 6593318345318089610}
   - component: {fileID: 8408578185679822378}
   - component: {fileID: 832711193191733068}
+  - component: {fileID: 4184757127363671917}
   m_Layer: 0
   m_Name: TANK_END_SPRING
   m_TagString: Untagged
@@ -260,6 +274,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8526402788194948585, guid: 85ffabdbf27d3014fab353babedde17b, type: 3}
+--- !u!114 &4184757127363671917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838832250026563768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &2310534887597924521
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +411,7 @@ GameObject:
   - component: {fileID: 1128880851217624814}
   - component: {fileID: 2353896693816924137}
   - component: {fileID: 4013160229611460530}
+  - component: {fileID: 1332013438004922385}
   m_Layer: 0
   m_Name: TANK_END_FLAP
   m_TagString: Untagged
@@ -485,6 +512,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7723139027669216062, guid: 85ffabdbf27d3014fab353babedde17b, type: 3}
+--- !u!114 &1332013438004922385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129201688903855746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1 &7164375171841747300
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +536,7 @@ GameObject:
   - component: {fileID: 3519355844816078409}
   - component: {fileID: 1372889395240504521}
   - component: {fileID: 5508531380460528400}
+  - component: {fileID: 1426242394323680055}
   m_Layer: 0
   m_Name: FLAP_FEMALE
   m_TagString: Untagged
@@ -597,3 +637,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1095344726045563401, guid: 85ffabdbf27d3014fab353babedde17b, type: 3}
+--- !u!114 &1426242394323680055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164375171841747300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter

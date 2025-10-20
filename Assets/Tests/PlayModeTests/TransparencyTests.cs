@@ -22,8 +22,8 @@ public class TransparencyTests
         LogAssert.ignoreFailingMessages = true;
         GameObject g = new GameObject();
         TransparencySetter transparencySetter = g.AddComponent<TransparencySetter>();
-        transparencySetter.TransparentMaterial = new Material(Shader.Find("Standard"));
         yield return null;
+
         Assert.IsTrue(transparencySetter == null);
     }
 
@@ -33,10 +33,10 @@ public class TransparencyTests
         LogAssert.ignoreFailingMessages = true;
         GameObject g = new GameObject();
         TransparencySetter transparencySetter = g.AddComponent<TransparencySetter>();
-        transparencySetter.TransparentMaterial = new Material(Shader.Find("Standard"));
-        transparencySetter.Renderer = g.AddComponent<MeshRenderer>();
+        g.AddComponent<MeshRenderer>();
         yield return null;
 
         Assert.IsTrue(transparencySetter != null);
+        Object.Destroy(g);
     }
 }

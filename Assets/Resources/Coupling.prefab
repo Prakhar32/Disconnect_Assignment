@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -888081632751535512}
   - component: {fileID: 1989726156942575495}
   - component: {fileID: 6529941639636496036}
+  - component: {fileID: -6540007979943562510}
   m_Layer: 0
   m_Name: Coupling
   m_TagString: Untagged
@@ -250,6 +251,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ScriptsAssembly::CouplingStateMachine
   GasMaterial: {fileID: 2100000, guid: c2a3f904bfd0a4945878629d36d0b11b, type: 2}
+--- !u!114 &-6540007979943562510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878305373022346103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14673abc8741c97469bc46805aa8ed6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::GroupTransparencySetter
+  TransparencySetters:
+  - {fileID: 7365491094275640077}
+  - {fileID: 4799091028962978809}
+  - {fileID: 7458031269051185195}
+  - {fileID: 5759895744665487191}
+  - {fileID: 6850531563995811740}
+  - {fileID: 6058117754306423641}
+  - {fileID: 7704124457479650960}
+  - {fileID: 5884215433201158163}
+  - {fileID: 2410988182952559972}
+  - {fileID: 5067813702484039905}
+  - {fileID: 7198240349919541398}
+  - {fileID: 1664924799168561348}
+  - {fileID: 4888671596872736849}
 --- !u!1001 &4661885098914577543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,11 +334,110 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+--- !u!114 &1664924799168561348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6316676179366722627, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &2410988182952559972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7045841168142186979, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!4 &4811274148299512121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 177685015488161214, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
   m_PrefabInstance: {fileID: 4661885098914577543}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4888671596872736849 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 246109351555194070, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &5067813702484039905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 497131514427237478, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &5884215433201158163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1232500920196986004, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &6058117754306423641 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1486352581119088606, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &6850531563995811740 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2279857036830126875, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &7198240349919541398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2546537897988391953, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &7704124457479650960 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3051430279341425175, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!1001 &8501807390236717114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -369,8 +495,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
+--- !u!114 &4799091028962978809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3991797974979288003, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
+  m_PrefabInstance: {fileID: 8501807390236717114}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &5759895744665487191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4184757127363671917, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
+  m_PrefabInstance: {fileID: 8501807390236717114}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
 --- !u!4 &7203357910174845459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1588375509843147305, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
   m_PrefabInstance: {fileID: 8501807390236717114}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7365491094275640077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1426242394323680055, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
+  m_PrefabInstance: {fileID: 8501807390236717114}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!114 &7458031269051185195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1332013438004922385, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
+  m_PrefabInstance: {fileID: 8501807390236717114}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter

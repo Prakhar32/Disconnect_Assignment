@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
-public class SingleInstanceEnsurer : MonoBehaviour
+public class PostPlacementStateChanger : MonoBehaviour
 {
     private ObjectSpawner _spawner;
     private ARInteractorSpawnTrigger _spawnTrigger;
+
     void Start()
     {
         _spawnTrigger = GetComponent<ARInteractorSpawnTrigger>();
