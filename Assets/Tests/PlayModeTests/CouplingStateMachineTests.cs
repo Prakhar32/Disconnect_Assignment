@@ -3,17 +3,17 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class AnimationTests
+public class CouplingStateMachineTests
 {
     [UnityTest]
-    public IEnumerator AnimatorNotPresent()
+    public IEnumerator AnimatorCannotbeMising()
     {
         LogAssert.ignoreFailingMessages = true;
         GameObject g = new GameObject();
-        AnimationController animationController = g.AddComponent<AnimationController>();
+        CouplingStateMachine couplingStateMachine = g.AddComponent<CouplingStateMachine>();
         yield return null;
 
-        Assert.IsTrue(animationController == null);
+        Assert.IsTrue(couplingStateMachine == null);
     }
 
     [UnityTest]
@@ -25,8 +25,8 @@ public class AnimationTests
 
         //When
         Animator animator = coupling.GetComponent<Animator>();
-        AnimationController controller = coupling.GetComponent<AnimationController>();
-        controller.PlayAttachAnimation();
+        CouplingStateMachine stateMachine = coupling.GetComponent<CouplingStateMachine>();
+        stateMachine.Attach();
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && !animator.IsInTransition(0));
 
         //Then
@@ -43,10 +43,10 @@ public class AnimationTests
 
         //When
         Animator animator = coupling.GetComponent<Animator>();
-        AnimationController controller = coupling.GetComponent<AnimationController>();
-        controller.PlayAttachAnimation();
+        CouplingStateMachine stateMachine = coupling.GetComponent<CouplingStateMachine>();
+        stateMachine.Attach();
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") && !animator.IsInTransition(0));
-        controller.PlayDetachAnimation();
+        stateMachine.Detach();
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Attaching") && !animator.IsInTransition(0));
 
         //Then
@@ -62,8 +62,8 @@ public class AnimationTests
 
         //When
         Animator animator = coupling.GetComponent<Animator>();
-        AnimationController controller = coupling.GetComponent<AnimationController>();
-        controller.PlayDetachAnimation();
+        CouplingStateMachine stateMachine = coupling.GetComponent<CouplingStateMachine>();
+        stateMachine.Detach();
         yield return new WaitForSeconds(1);
 
         //Then
