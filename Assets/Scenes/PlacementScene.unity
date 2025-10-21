@@ -369,7 +369,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2123111432}
+        m_TargetAssemblyTypeName: CouplingUIInputProcessor, ScriptsAssembly
+        m_MethodName: TransparencyChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &44531694
 MonoBehaviour:
@@ -3917,6 +3929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2f42a7a75a0f84c8978295acd7fbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ScriptsAssembly::SingleInstanceEnsurer
+  CouplingInteractionUI: {fileID: 0}
 --- !u!1 &839178799
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,9 +5103,9 @@ RectTransform:
   - {fileID: 2079264538}
   m_Father: {fileID: 1239496127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 70.1743, y: -69.53115}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045870716
@@ -5138,7 +5151,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1045870717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2123111432}
+        m_TargetAssemblyTypeName: CouplingUIInputProcessor, ScriptsAssembly
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1045870717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6521,9 +6546,9 @@ RectTransform:
   - {fileID: 1966846107}
   m_Father: {fileID: 1239496127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 70.1743, y: -25}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249213488
@@ -6569,7 +6594,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1249213489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2123111432}
+        m_TargetAssemblyTypeName: CouplingUIInputProcessor, ScriptsAssembly
+        m_MethodName: Attach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1249213489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10318,13 +10355,14 @@ GameObject:
   - component: {fileID: 2123111430}
   - component: {fileID: 2123111429}
   - component: {fileID: 2123111428}
+  - component: {fileID: 2123111432}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2123111428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10410,6 +10448,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2123111432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123111427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060e755003bd53944919ef304be83fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PlayModeTests::CouplingUIInputProcessor
+  Coupling: {fileID: 0}
 --- !u!1001 &2130764258
 PrefabInstance:
   m_ObjectHideFlags: 0

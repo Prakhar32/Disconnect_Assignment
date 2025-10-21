@@ -32,7 +32,7 @@ public class CouplingStateMachineTests
     public IEnumerator AttachPlays_AttachingAnimation()
     {
         //Given
-        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>(Constants.CouplingPrefabPath));
         yield return null;
 
         //When
@@ -52,7 +52,7 @@ public class CouplingStateMachineTests
     public IEnumerator DetachPlays_DetachingAnimation()
     {
         //Given
-        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>(Constants.CouplingPrefabPath));
         yield return null;
 
         //When
@@ -73,7 +73,7 @@ public class CouplingStateMachineTests
     [UnityTest]
     public IEnumerator NoDetachment_ifNoAttachment()
     {
-        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>(Constants.CouplingPrefabPath));
         yield return null;
 
         //When
@@ -91,7 +91,7 @@ public class CouplingStateMachineTests
     public IEnumerator GasStartsFlowing_WhenAttached()
     {
         //Given
-        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>(Constants.CouplingPrefabPath));
         yield return null;
         
         //When
@@ -114,7 +114,7 @@ public class CouplingStateMachineTests
     public IEnumerator GasStopsFlowing_WhenDetached()
     {
         //Given
-        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>(Constants.CouplingPrefabPath));
         yield return null;
         
         //When
@@ -143,7 +143,7 @@ public class CouplingStateMachineTests
     public IEnumerator CanReAttach_AfterDetachment()
     {
         //Given
-        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GameObject coupling = GameObject.Instantiate(Resources.Load<GameObject>(Constants.CouplingPrefabPath));
         yield return null;
 
         //When

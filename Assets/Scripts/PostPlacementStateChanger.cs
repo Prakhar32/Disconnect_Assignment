@@ -7,6 +7,7 @@ public class PostPlacementStateChanger : MonoBehaviour
     private ObjectSpawner _spawner;
     private ARInteractorSpawnTrigger _spawnTrigger;
 
+    public CouplingUIInputProcessor CouplingInteractionUI;
     void Start()
     {
         _spawnTrigger = GetComponent<ARInteractorSpawnTrigger>();
@@ -24,11 +25,18 @@ public class PostPlacementStateChanger : MonoBehaviour
             throw new MissingComponentException("ObjectSpawner missing");
         }
 
+        if(CouplingInteractionUI == null)
+        {
+            Destroy(this);
+            throw new MissingReferenceException("CouplingInteractionUI reference missing");
+        }
+
         _spawner.objectSpawned += _spawner_objectSpawned;
     }
 
     private void _spawner_objectSpawned(GameObject obj)
     {
         _spawnTrigger.enabled = false;
+        CouplingInteractionUI.gameObject.SetActive(true);
     }
 }
