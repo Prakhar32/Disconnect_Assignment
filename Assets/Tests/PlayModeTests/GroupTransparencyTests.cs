@@ -19,6 +19,32 @@ public class GroupTransparencyTests
     }
 
     [UnityTest]
+    public IEnumerator AnyElementIsNull()
+    {
+        LogAssert.ignoreFailingMessages = true;
+        GameObject g = new GameObject();
+        GroupTransparencySetter groupTransparencySetter = g.AddComponent<GroupTransparencySetter>();
+        groupTransparencySetter.TransparencySetters = new List<TransparencySetter>();
+        groupTransparencySetter.TransparencySetters.Add(null);
+        yield return null;
+        
+        Assert.IsTrue(groupTransparencySetter == null);
+    }
+
+
+    [UnityTest]
+    public IEnumerator GasObjectslist_Invalid()
+    {
+        LogAssert.ignoreFailingMessages = true;
+        GameObject g = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));
+        GroupTransparencySetter groupTransparencySetter = g.GetComponent<GroupTransparencySetter>();
+        groupTransparencySetter.GasObjects = null;
+        yield return null;
+
+        Assert.IsTrue(groupTransparencySetter == null);
+    }
+
+    [UnityTest]
     public IEnumerator CanMakeObjectsinListTransparent()
     {
         GameObject g = GameObject.Instantiate(Resources.Load<GameObject>("Coupling"));

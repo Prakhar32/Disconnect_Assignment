@@ -50,6 +50,10 @@ public class CouplingUIInputProcessor : MonoBehaviour
 
     public void TransparencyChanged()
     {
-        
+        int option = Dropdown.value;
+        if (option == 0)
+            _groupTransparencySetter.MakeOpaque();
+        else
+            _groupTransparencySetter.MakeTransparent();
     }
 }

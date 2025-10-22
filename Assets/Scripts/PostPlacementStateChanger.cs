@@ -37,6 +37,7 @@ public class PostPlacementStateChanger : MonoBehaviour
     private void _spawner_objectSpawned(GameObject obj)
     {
         _spawnTrigger.enabled = false;
+        CouplingInteractionUI.Coupling = obj;
         CouplingInteractionUI.gameObject.SetActive(true);
     }
 }

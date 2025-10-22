@@ -33,7 +33,6 @@ public class CouplingInputTests
         Assert.IsTrue(couplingUI == null);
     }
 
-
     [UnityTest]
     public IEnumerator CouplingStaateMachine_notPresentinCoupling()
     {

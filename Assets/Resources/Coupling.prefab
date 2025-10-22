@@ -277,6 +277,9 @@ MonoBehaviour:
   - {fileID: 7198240349919541398}
   - {fileID: 1664924799168561348}
   - {fileID: 4888671596872736849}
+  GasObjects:
+  - {fileID: 6191561064852902035}
+  - {fileID: 2107021114252832834}
 --- !u!1001 &4661885098914577543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -345,6 +348,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!1 &2107021114252832834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6741874649190419653, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
+  m_PrefabInstance: {fileID: 4661885098914577543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2410988182952559972 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7045841168142186979, guid: f7cc71a40076b78408b5c0b10a13b612, type: 3}
@@ -517,6 +525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c621a57c4c3983b418530d0fa89cdaf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ScriptsAssembly::TransparencySetter
+--- !u!1 &6191561064852902035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2310534887597924521, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}
+  m_PrefabInstance: {fileID: 8501807390236717114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7203357910174845459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1588375509843147305, guid: f30dad44ca3471840ab3bc76b20d2dfc, type: 3}

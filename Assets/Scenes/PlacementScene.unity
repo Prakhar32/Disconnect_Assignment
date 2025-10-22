@@ -3929,7 +3929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2f42a7a75a0f84c8978295acd7fbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ScriptsAssembly::SingleInstanceEnsurer
-  CouplingInteractionUI: {fileID: 0}
+  CouplingInteractionUI: {fileID: 2123111432}
 --- !u!1 &839178799
 GameObject:
   m_ObjectHideFlags: 0
@@ -10461,6 +10461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: PlayModeTests::CouplingUIInputProcessor
   Coupling: {fileID: 0}
+  Dropdown: {fileID: 44531693}
 --- !u!1001 &2130764258
 PrefabInstance:
   m_ObjectHideFlags: 0
